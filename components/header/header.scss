@@ -1,0 +1,34 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    width: 100%;
+    max-width: 100%;
+    padding: 3rem 0;
+}
+
+.logo-box{
+    padding: 2rem 1rem;
+}
+
+.nav{
+    &__items{
+        position: relative;
+        right: 10rem;
+        display: flex;
+        align-items: center;
+        
+    }
+    &__list{
+        list-style: none;
+        margin-left: 2rem;
+    }
+    &__link{
+        color: $blue;
+        font-size: 1rem;
+        font-weight: 400;
+        text-transform: capitalize;
+
+    }
+}

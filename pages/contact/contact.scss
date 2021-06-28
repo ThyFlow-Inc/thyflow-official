@@ -1,0 +1,32 @@
+.contact{
+    padding: 5rem 10rem;
+    &__header{
+        font-size: 2rem;
+        color: $blue;
+        text-transform: capitalize;
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    &__form{
+        box-shadow: $box-shadow;
+        border-radius: $border-radius;
+    }
+    &__form-label{
+        display: inline-block;
+        font-size: 1rem;
+        color: $black;
+        padding: 0 2rem;
+    }
+    &__form-input{
+        height: 4rem;
+        width: 40%;
+        border: none;
+        outline: none;
+        background-color: #0b379e21;
+        padding: 0 1rem;
+        color: $grey;
+    }
+}

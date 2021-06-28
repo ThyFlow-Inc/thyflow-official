@@ -1,0 +1,34 @@
+.blog{
+    padding: 5rem 5rem;
+
+    &__heading{
+        font-size: 2rem;
+        font-weight: 700;
+        color: $blue;
+        text-transform: capitalize;
+        padding: 1rem 2rem;
+    }
+    &__list{
+        height: 14rem;
+        width: 70rem;
+        display: flex;
+        align-items: center;
+        box-shadow: $box-shadow;
+    }
+
+    &__image{
+        height: 15rem;
+        width: 15rem;
+    }
+    &__title{
+        color: $orange;
+        padding: 1.5rem 0;
+        display: block;
+    }
+
+    &__article{
+        font-size: 1rem;
+        color: $black;
+        display: block;
+    }
+}

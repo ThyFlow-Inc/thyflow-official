@@ -1,0 +1,22 @@
+@import './variables';
+@import './mixins';
+
+.btn{
+    border-radius: $border-radius;
+    color: $white;
+    padding: 1rem 1rem;
+    border: $border-transparent;
+
+    &:hover{
+        box-shadow: $box-shadow-hover;
+    }
+
+    &--primary{
+        @include button-style($blue)
+    }
+
+    &__text {
+        font-size: 1rem;  
+        text-transform: capitalize;
+      }
+}

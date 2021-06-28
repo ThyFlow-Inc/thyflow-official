@@ -1,0 +1,89 @@
+.features{
+    padding: 5rem 10rem;
+    &__heading-secondary{
+        color: $orange;
+        font-size: 2rem;
+        margin-bottom: 5rem;
+        text-shadow: 4px 6px 21px rgba(172,172,172,0.73);
+    }
+    &__text{
+        font-weight: 700;
+        color: $black;
+    }
+    &__cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__card{
+        height: 17rem;
+        width: 12rem;
+        box-shadow: $box-shadow;
+        border: none;
+        border-radius: $border-radius;
+        margin-top: 2rem;
+    }
+    &__card-image{
+        height: 16rem;
+        width: 12rem;
+        object-fit: cover;
+    }
+    &__card-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: -4.5rem;
+    }
+    &__card-more{
+        position: relative;
+        color: $white;
+        font-size: 1rem;
+        top: -1rem;
+        padding: 0 2rem;
+        text-align: center;
+    }
+    &__card-more-image{
+        height: 9.5rem;
+        width: 10rem;
+        top: 1rem;
+        left: 1rem;
+        position: relative;
+        box-shadow: $box-shadow;
+    }
+    &__button{
+        position: relative;
+        top: 3rem;
+        left: 2.5rem;
+    }
+    &__card-text{
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: $black;
+    }
+    &__card-rating{
+        font-size: 1rem;
+        font-weight: 700;
+        color: $black;
+    }
+    &__card-bottom{
+        padding: 1rem 2rem;
+    }
+    &__card-name{
+        margin-left: 1rem;
+    }
+}
+
+.star{
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.user{
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}

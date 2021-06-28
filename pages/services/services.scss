@@ -1,0 +1,97 @@
+.services{
+    padding: 0 10rem;
+    &__hero{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &__heading-secondary{
+        color: $orange;
+        font-size: 3rem;
+        text-transform: capitalize;
+
+    }
+
+    &__heading-primary{
+        color: $blue;
+        font-size: 4rem;
+    }
+
+    &__text{
+        font-weight: 700;
+        color: $black;
+        font-size: 1rem;
+    }
+   
+    &__cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__card{
+        width: 18rem;
+        height: 30rem;
+        box-shadow: $box-shadow;
+        border: none;
+        border-radius: $border-radius;
+        margin-top: 2rem;
+        
+    }
+    &__card-image{
+        height: 27rem;
+        width: 18rem;
+        margin-top: -1rem;
+        object-fit: cover;
+    }
+    &__card-title{
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: $orange;
+        display: block;
+    }
+    &__card-subtitle{
+        font-size: 1rem;
+        color: $black;
+    }
+    &__card-more{
+        position: relative;
+        color: $white;
+        font-size: 1rem;
+        top: -1rem;
+        padding: 0 2rem;
+        text-align: center;
+    }
+    &__card-more-title{
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 2rem 1rem;
+        color: $black;
+    }
+    &__card-more-image{
+        height: 18rem;
+        width: 16rem;
+        top: 1rem;
+        left: 1rem;
+        position: relative;
+        box-shadow: $box-shadow;
+    }
+    &__button{
+        position: relative;
+        top: 3rem;
+        left: 2.5rem;
+    }
+    &__card-text{
+        padding: 0 1rem;
+        position: relative;
+        top: -8rem;
+    }
+
+    &__end-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}

@@ -1,0 +1,45 @@
+.steps{
+    padding: 5rem 5rem;
+    &__heading-secondary{
+        color: $orange;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-shadow: 4px 6px 21px rgba(172,172,172,0.73);
+    }
+
+    &__cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &__card{
+        height: 10rem;
+        width: 15rem;
+        display: flex;
+        align-items: baseline;
+    }
+    &__number{
+        color: $orange;
+        display: inline-block;
+        font-size: 6rem;
+        text-shadow: 4px 6px 21px rgba(172,172,172,0.73);
+        padding-right: 3px;
+    }
+    &__card-text{
+        font-size: 1rem;
+        color: $black;
+        text-shadow: 4px 6px 21px rgba(172,172,172,0.73);
+    }    
+}
+
+.button{
+    position: relative;
+    left: 35rem;
+    top: 11rem;
+    margin-bottom: 6rem;
+}
+
+.bold{
+    font-weight: 600;
+}

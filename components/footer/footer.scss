@@ -1,0 +1,38 @@
+.footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: $blue;
+    color: $white;
+    font-size: 1rem;
+    padding: 3rem 5rem;
+
+    &__title-text{
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    &__list{
+        list-style: none;
+        text-transform: capitalize;
+        
+    }
+    &__sitemap{
+        flex: 0 0 25%;
+    }
+    &__connect{
+        flex: 0 0 25%;
+    }
+    &__legal{
+        flex: 0 0 25%;
+    }
+    &__address{
+        flex: 0 0 25%;
+    }
+
+    &__text{
+        text-align: center;
+        padding: 0 4rem;
+    }
+}
