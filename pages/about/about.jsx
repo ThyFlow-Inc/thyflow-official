@@ -1,6 +1,6 @@
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import Link from "next/link";
+
 import styles from "../../styles/Home.module.css"
 
 const About =()=>(
@@ -56,11 +56,11 @@ const About =()=>(
             <form action="" className="about__form">
                 <input type="text" className="about__input" placeholder="Your Email here"/>
                 <div>
-            <Link href="">
+            
                 <button className="btn btn--primary">
                    <span className="btn__text">Subscribe</span> 
                 </button>
-            </Link>
+       
         </div>
             </form>
         </section>

@@ -44,7 +44,7 @@ const Header =()=> (
             </ul>
         </nav>
         <div>
-            <Link href="">
+            <Link href="/">
                 <button className="btn btn--primary">
                    <span className="btn__text">join beta</span> 
                 </button>

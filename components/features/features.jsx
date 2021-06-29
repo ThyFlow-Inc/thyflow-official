@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 const Features =()=> (
     <section className="features">
@@ -111,13 +110,10 @@ const Features =()=> (
                     <span className="features__card-more">And many more!</span>     
                 </div>
                 <div className="features__button">
-                    <Link href="">
                         <button className="btn btn--primary">
                         <span className="btn__text">view more</span> 
                         </button>
-                    </Link>
                 </div>    
-            
             </div>
         </div>
     </section>

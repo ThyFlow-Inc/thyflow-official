@@ -1,4 +1,4 @@
-import Link from 'next/link'
+
 
 const Steps =() =>(
     <section className="steps">
@@ -30,11 +30,11 @@ const Steps =() =>(
             </div>
         </div>
         <div>
-            <Link href="">
+            
                 <button className="btn btn--primary button">
                    <span className="btn__text">join beta</span> 
                 </button>
-            </Link>
+           
         </div>
     </section>
 );

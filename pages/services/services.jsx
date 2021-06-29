@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Footer from '../../components/footer/footer'
 import Header from "../../components/header/header";
-import Link from 'next/link';
+
 import styles from "../../styles/Home.module.css"
 
 const Services =()=>(
@@ -26,6 +26,7 @@ const Services =()=>(
                         src="/images/maincontent.png"
                         width={400}
                         height={800}
+                        alt="phone image"
                     />
                 </div>
                 <div className="services__cards">
@@ -98,11 +99,11 @@ const Services =()=>(
                             <span className="services__card-more">And many more!</span>     
                         </div>
                         <div className="services__button">
-                            <Link href="">
+                            
                                 <button className="btn btn--primary">
                                 <span className="btn__text">view more</span> 
                                 </button>
-                            </Link>
+                           
                         </div>    
                     </div>
                 </div>
