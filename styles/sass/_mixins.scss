@@ -2,3 +2,36 @@
     border: .1rem solid $button-color;
     background: $button-color;
 }
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == mobile-screen{
+        @media(max-width: 450px ){
+            @content
+        }
+    }
+    @if $breakpoint == small-screen{
+        @media(max-width: 600px ){
+            @content
+        }
+    }
+    @if $breakpoint == tablet {
+        @media (max-width: 780px) {
+            @content
+        }
+    }
+    @if $breakpoint == medium {
+        @media (max-width: 900px) {
+            @content
+        }
+    }
+    @if $breakpoint == big-tab {
+        @media (max-width: 1050px) {
+            @content
+        }
+    }
+    @if $breakpoint == big-screen {
+        @media (min-width: 1300px) {
+            @content
+        }
+    }
+}

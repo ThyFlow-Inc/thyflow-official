@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Footer from '../../components/footer/footer'
 import Header from "../../components/header/header";
-
 import styles from "../../styles/Home.module.css"
 
 const Services =()=>(
@@ -15,7 +14,7 @@ const Services =()=>(
                             Stop wasting time
                         </h1>
                         <h2 className="services__heading-secondary">
-                            searching for local businesses.
+                            Searching for local businesses.
                         </h2>
                         <p className="services__text">
                             ThyFlow does the heavy lifting for you by easily connecting you to verified on-demand service providers. <br />
@@ -67,7 +66,7 @@ const Services =()=>(
                         </div>
                     <div className="services__card">
                     <img 
-                            src="/images/rectangle 24.png"
+                            src="/images/rectangle 53.png"
                             alt="service image"
                             className="services__card-image"
                         />
@@ -78,7 +77,7 @@ const Services =()=>(
                     </div>
                     <div className="services__card">
                         <img 
-                            src="/images/rectangle 17.png"
+                            src="/images/rectangle 48.png"
                             alt="service image"
                             className="services__card-image"
                         
@@ -94,14 +93,14 @@ const Services =()=>(
                             alt="service image"
                             className="services__card-more-image"
                         />
-                        <div className="services__card-title">
+                        <div className="services__more">
+                            <span className="services__card-more">And many more!</span>   
                             <span className="services__card-more-title">We’re constantly curating services for you. Stay updated by subscribing to our newsletter!</span>
-                            <span className="services__card-more">And many more!</span>     
+
                         </div>
                         <div className="services__button">
-                            
-                                <button className="btn btn--primary">
-                                <span className="btn__text">view more</span> 
+                                <button className="btn btn--primary services__btn">
+                                <span className="btn__text">subscribe</span> 
                                 </button>
                            
                         </div>    
@@ -110,18 +109,19 @@ const Services =()=>(
             
             <div className="services__end-section">
               <div>
-                    <h1 className="services__heading-secondary">
+                    <h1 className="services__heading-secondary right">
                         Save time while getting
                     </h1>
-                    <h1 className="services__heading-primary">
-                        more time
+                    <h1 className="services__heading-primary right">
+                        more done
                     </h1>
               </div>
+              <div className="line"></div>
               <div>
-                <p className="services__text">
+                <p className="services__text xs">
                 No need to spend the time searching for top-rated local business.
                 </p>
-                <p className="services__text">
+                <p className="services__text xs">
                     ThyFlow App easily connects you to verified on-demand service providers that will bring their service to you!
                 </p>
                 <p className="services__text">

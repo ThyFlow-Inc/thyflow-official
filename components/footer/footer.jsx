@@ -2,7 +2,7 @@ const Footer =()=>(
     <footer className="footer">
         <div className="footer__sitemap">
             <p className="footer__title-text">site map</p>
-            <ul>
+            <ul className="footer__item">
                 <li className="footer__list">home</li>
                 <li className="footer__list">about</li>
                 <li className="footer__list">services</li>
@@ -12,7 +12,7 @@ const Footer =()=>(
         </div>
         <div className="footer__connect">
             <p className="footer__title-text">connect</p>
-            <ul>
+            <ul className="footer__item">
                 <li className="footer__list">Follow us on Instagram</li>
                 <li className="footer__list">Subscribe to our newsletter</li>
                 <li className="footer__list">Customer support</li>
@@ -21,23 +21,22 @@ const Footer =()=>(
         </div>
         <div className="footer__legal">
             <p className="footer__title-text">legal</p>
-            <p className="footer__text">
-            Legal © 2021 ThyFlow Inc.
-            All Rights Reserved
-            </p>
-            <ul>
+           
+            <ul className="footer__item">
+                <li className="footer__list">Legal © 2021 ThyFlow Inc.</li>
+                <li className="footer__list">All Rights Reserved</li>
                 <li className="footer__list">Privacy Policy</li>
                 <li className="footer__list">Terms of Service</li>
             </ul>
         </div>
         <div className="footer__address">
             <p className="footer__title-text">address</p>
-            <address className="footer__text">
-                1390 Market St
-                Suite 200
-                San Francisco
-                CA 94102
-            </address>
+            <ul className="footer__item">
+                <li className="footer__list">1390 Market St</li>
+                <li className="footer__list">Suite 200</li>
+                <li className="footer__list">San Francisco</li>
+                <li className="footer__list">CA 94102</li>
+            </ul>
         </div>
     </footer>
 );

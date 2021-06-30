@@ -13,6 +13,9 @@ header{
 }
 
 .nav{
+    @include respond(mobile){
+        display: none;
+    }
     &__items{
         position: relative;
         right: 10rem;

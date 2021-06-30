@@ -1,5 +1,10 @@
 .steps{
-    padding: 5rem 5rem;
+    padding: 13rem 5rem;
+    position: relative;
+    margin-bottom: 10rem;
+    @include respond(mobile-screen){
+        padding: 13rem 3rem;
+    }
     &__heading-secondary{
         color: $orange;
         font-size: 2rem;
@@ -11,6 +16,9 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        @include respond(mobile-screen){
+            flex-direction: column;
+        }
     }
 
     &__card{
@@ -18,6 +26,9 @@
         width: 15rem;
         display: flex;
         align-items: baseline;
+        @include respond(mobile-screen){
+            margin-top: 2.5rem;
+        }
     }
     &__number{
         color: $orange;
@@ -34,10 +45,13 @@
 }
 
 .button{
-    position: relative;
-    left: 35rem;
-    top: 11rem;
-    margin-bottom: 6rem;
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    top: 100%;
+    
+    transform: translate(-50%, -50%);
+    margin: 3rem 0;
 }
 
 .bold{

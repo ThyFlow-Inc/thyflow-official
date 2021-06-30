@@ -2,6 +2,7 @@ import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 
 import styles from "../../styles/Home.module.css"
+import SubscribeForm from "../../components/subscribe-form/subscribe-form";
 
 const About =()=>(
     <>
@@ -46,23 +47,7 @@ const About =()=>(
                     Integer vitae bibendum quam. Fusce eget feugiat mauris, eget ornare arcu. In porttitor felis erat, vitae semper mi condimentum a. Vivamus id tincidunt dolor, nec sollicitudin odio. Ut mattis nibh sit amet scelerisque posuere. Phasellus ornare orci lacus, non eleifend tortor consectetur a. Interdum et malesuada fames ac ante ipsum primis in faucibus.
                 </p>
             </div>
-
-            <h1 className="about__form-title">
-                Stay updated with ThyFlow
-            </h1>
-            <h2 className="about__heading-secondary">
-                Subscribe to our weekly newsletter to get tips sent to your inbox.
-            </h2>
-            <form action="" className="about__form">
-                <input type="text" className="about__input" placeholder="Your Email here"/>
-                <div>
-            
-                <button className="btn btn--primary">
-                   <span className="btn__text">Subscribe</span> 
-                </button>
-       
-        </div>
-            </form>
+            <SubscribeForm />  
         </section>
         </main>
         <Footer />

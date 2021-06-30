@@ -1,0 +1,60 @@
+.subscribe{
+    position: relative;
+    padding: 5rem 0;
+    &__heading-secondary{
+        color: $orange;
+        font-size: 2.5rem;
+        text-shadow: 4px 6px 21px rgba(172,172,172,0.73);
+        text-align: center;
+        @include respond(tablet){
+            font-size: 1.5rem;
+        }
+    }
+    &__form-title{
+        color: $blue;
+        font-size: 3rem;
+        text-shadow: 4px 6px 21px rgba(172,172,172,0.73);
+        text-align: center;
+        @include respond(tablet){
+            font-size: 2rem;
+        }
+    }
+    &__form{
+        width: 60%;
+        box-shadow: $box-shadow;
+        border-radius: 1rem;
+        display: flex;
+        padding: .5rem 0;
+        justify-content: space-around;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 5rem 0;
+        @include respond(tablet){
+            width: 70%;
+
+        }
+        @include respond(tablet){
+            width: 100%;
+
+        }
+    }
+    &__input{
+        padding: 1rem 1rem;
+        font-size: 1rem;
+        font-family: inherit;
+        color: $black;
+        height: 4rem;
+        width: 13rem;
+        border: none;
+        outline: none;
+    }
+}
+
+.pad{
+    margin-top: .9rem;
+    @include respond(tablet){
+        margin-right: 1rem;
+    }
+}

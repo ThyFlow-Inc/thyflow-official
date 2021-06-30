@@ -1,5 +1,5 @@
 .home-hero{
-    background: url('../../public/images/banner.png');
+    background: url('../../public/images/Banner.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -8,6 +8,10 @@
     align-items: center;
     justify-content: space-evenly;
     overflow: visible;
+    @include respond(mobile-screen){
+        background-size: cover;
+        flex-direction: column-reverse;
+    }
     &__service-card-list{
         height: 25rem;
         width: 17rem;
@@ -17,7 +21,9 @@
         border-radius: $border-radius;
         position: relative;
         z-index: 1;
-        
+        @include respond(mobile-screen){
+            top: 3rem;
+        }
     }
     &__service-card-item{
         color: $grey;

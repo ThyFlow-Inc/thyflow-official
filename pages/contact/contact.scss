@@ -1,5 +1,8 @@
 .contact{
     padding: 5rem 10rem;
+    @include respond(small-screen){
+        padding: 5rem 2rem;
+    }
     &__header{
         font-size: 2rem;
         color: $blue;
@@ -8,25 +11,77 @@
     &__container{
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        @include respond(small-screen){
+           flex-direction: column;
+        }
+
     }
     &__form{
         box-shadow: $box-shadow;
         border-radius: $border-radius;
+        padding: 2rem 0;
+        flex: 0 0 65%;
     }
     &__form-label{
         display: inline-block;
         font-size: 1rem;
         color: $black;
-        padding: 0 2rem;
+        padding: 1rem 1rem;
     }
     &__form-input{
-        height: 4rem;
-        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__input{
+        height: 2rem;
+        width: 60%;
         border: none;
         outline: none;
         background-color: #0b379e21;
         padding: 0 1rem;
         color: $grey;
+        font-family: inherit;
+        margin: 0 2rem;
+        border-radius: $border-radius;
+        &--message{
+            height: 7rem;
+        }
     }
+    &__button{
+        position: relative;
+        left: 77%;
+        margin: 1rem 0;
+        @include respond(big-screen){
+            left: 79%;
+        }
+        @include respond(big-tab){
+            left: 75%;
+        }
+        @include respond(medium){
+            left: 73%;
+        }
+        @include respond(tablet){
+            left: 67%;
+        }
+        @include respond(small-screen){
+            left: 64%
+        }
+    }
+    &__text-content{
+        padding: 0 5rem;
+        @include respond(small-screen){
+            padding: 3rem 5rem;
+        }
+    }
+    &__text{
+        color: $blue;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+.bold{
+    font-weight: 700;
 }

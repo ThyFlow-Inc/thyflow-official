@@ -1,5 +1,8 @@
 .features{
     padding: 5rem 10rem;
+    @include respond(mobile-screen){
+        padding: 8rem 6rem;
+    }
     &__heading-secondary{
         color: $orange;
         font-size: 2rem;
@@ -14,6 +17,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include respond(mobile-screen){
+            flex-direction: column;
+        }
     }
     &__card{
         height: 17rem;
@@ -22,6 +28,9 @@
         border: none;
         border-radius: $border-radius;
         margin-top: 2rem;
+        @include respond(tablet){
+            height: 19rem;
+        }
     }
     &__card-image{
         height: 16rem;
@@ -53,7 +62,10 @@
     &__button{
         position: relative;
         top: 3rem;
-        left: 2.5rem;
+        left: 1.5rem;
+        @include respond(tablet){
+            top: 5rem;
+        }
     }
     &__card-text{
         font-size: 1rem;
@@ -68,6 +80,9 @@
     }
     &__card-bottom{
         padding: 1rem 2rem;
+        @include respond(tablet){
+           padding: 2rem 2rem;
+        }
     }
     &__card-name{
         margin-left: 1rem;

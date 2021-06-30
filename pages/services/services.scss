@@ -1,21 +1,30 @@
 .services{
-    padding: 0 10rem;
+    padding: 5rem 10rem;
+    @include respond(small-screen){
+        padding: 5rem 2rem;
+    }
     &__hero{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        @include respond(small-screen){
+            flex-direction: column;
+        }
     }
 
     &__heading-secondary{
         color: $orange;
         font-size: 3rem;
-        text-transform: capitalize;
-
+        @include respond(small-screen){
+            font-size: 2rem;
+        }
     }
 
     &__heading-primary{
         color: $blue;
-        font-size: 4rem;
+        @include respond(small-screen){
+            font-size: 3rem;
+        }
     }
 
     &__text{
@@ -29,10 +38,14 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+        @include respond(small-screen){
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
     }
     &__card{
-        width: 18rem;
-        height: 30rem;
+        width: 20rem;
+        height: 32rem;
         box-shadow: $box-shadow;
         border: none;
         border-radius: $border-radius;
@@ -40,9 +53,9 @@
         
     }
     &__card-image{
-        height: 27rem;
-        width: 18rem;
-        margin-top: -1rem;
+        height: 26rem;
+        width: 20rem;
+        margin-top: -.6rem;
         object-fit: cover;
     }
     &__card-title{
@@ -56,42 +69,77 @@
         font-size: 1rem;
         color: $black;
     }
+    &__more{
+        padding: 0 1rem;
+    }
     &__card-more{
         position: relative;
         color: $white;
-        font-size: 1rem;
-        top: -1rem;
-        padding: 0 2rem;
-        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+        top: -10rem;
+        left: 1.5rem;
     }
     &__card-more-title{
         font-size: 1rem;
-        font-weight: 400;
-        padding: 2rem 1rem;
+        font-weight: 400; 
         color: $black;
+        display: block;
+        margin-top: -1rem;
     }
     &__card-more-image{
-        height: 18rem;
-        width: 16rem;
+        height: 19rem;
+        width: 18.5rem;
         top: 1rem;
-        left: 1rem;
+        left: .8rem;
         position: relative;
         box-shadow: $box-shadow;
     }
+    &__btn{
+        padding: 0.5rem 6.5rem;
+    }
     &__button{
-        position: relative;
-        top: 3rem;
-        left: 2.5rem;
+        margin: 2rem 1rem;
     }
     &__card-text{
         padding: 0 1rem;
         position: relative;
-        top: -8rem;
+        top: -6rem;
     }
 
     &__end-section{
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        padding: 8rem 6rem;
+        @include respond(small-screen){
+            flex-direction: column;
+            padding: 8rem 0rem;
+        }
+    }
+}
+
+.line{
+    background-color: #3c74f5;
+    height: 30rem;
+    width: .3rem;
+    margin: 0 4rem;
+    @include respond(small-screen){
+        transform: rotate(90deg);
+        height: 10rem;
+        margin: 0 0;
+        // padding: 1rem 0;
+    }
+}
+
+.xs{
+    font-weight: 400;
+}
+
+.right{
+    text-align: right;
+    font-size: 3rem;
+    @include respond(small-screen){
+        font-size: 2rem;
+        text-align: center;
     }
 }
