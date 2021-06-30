@@ -1,8 +1,4 @@
-
-const path = require("path");
-
 module.exports = {
-    sassOptions: {
-        includePaths: [path.join(__dirname, "styles")],
-    },
-};
+  reactStrictMode: false,
+  target: 'serverless'
+}
