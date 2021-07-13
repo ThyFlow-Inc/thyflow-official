@@ -22,6 +22,7 @@
 
     &__heading-primary{
         color: $blue;
+        font-size: 4rem;
         @include respond(small-screen){
             font-size: 3rem;
         }

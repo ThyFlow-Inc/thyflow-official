@@ -6,6 +6,7 @@
     color: $white;
     padding: .3rem 2rem;
     border: $border-transparent;
+    cursor: pointer;
 
     &:hover{
         box-shadow: $box-shadow-hover;

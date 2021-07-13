@@ -29,13 +29,7 @@ const Steps =() =>(
                 </p>
             </div>
         </div>
-        <div>
-            
-                <button className="btn btn--primary button">
-                   <span className="btn__text">join beta</span> 
-                </button>
-           
-        </div>
+        
     </section>
 );
 

@@ -12,42 +12,6 @@
         text-transform: capitalize;
         padding: 1rem 2rem;
     }
-    &__list{
-        height: 16rem;
-        width: 70rem;
-        display: flex;
-        align-items: center;
-        box-shadow: $box-shadow;
-        border-radius: $border-radius;
-        @include respond(small-screen){
-            height: 46rem;
-            width: 28.2rem;
-            padding: 1rem 1rem;
-        }
-    }
 
-    &__image{
-        height: 20rem;
-        width: 18rem;
-        object-fit: cover;
-        margin-top: 3.5rem;
-        @include respond(small-screen){
-            margin-top: 0;
-            object-fit: fill;
-            height: 26rem;
-            width: 34rem;
-            margin-top: -1.5rem;
-        }
-    }
-    &__title{
-        color: $orange;
-        margin-top: -1rem;
-        display: block;
-    }
-
-    &__article{
-        font-size: 1rem;
-        color: $black;
-        display: block;
-    }
+   
 }

@@ -1,0 +1,79 @@
+   <div className="home-hero__service-card-list">
+            <p className="home-hero__service-card-item">pet grooming</p>
+            <p className="home-hero__service-card-item">braiding</p>
+            <p className="home-hero__service-card-item active">haircut</p>
+            <p className="home-hero__service-card-item">dry cleaning</p>
+            <p className="home-hero__service-card-item">car wash</p>
+        </div>
+        <div className="home-hero__text-content">
+            <h2 className="home-hero__heading-secondary">
+                Save time while getting 
+            </h2>
+            <h1 className="home-hero__heading-primary">
+                more done
+            </h1>
+            <h3 className="home-hero__countdown">
+                Live in 42 days 9 hours
+            </h3>
+        </div>
+
+
+        background: url('../../public/images/Banner.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow( -.5rem .5rem 1rem rgb(175, 175, 175) );
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: visible;
+    @include respond(mobile-screen){
+        background-size: cover;
+        flex-direction: column-reverse;
+    }
+    &__service-card-list{
+        height: 25rem;
+        width: 17rem;
+        background-color: $white;
+        box-shadow: $box-shadow;
+        border: none;
+        border-radius: $border-radius;
+        position: relative;
+        z-index: 1;
+        @include respond(mobile-screen){
+            top: 3rem;
+        }
+    }
+    &__service-card-item{
+        color: $grey;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 1.2rem 1rem;
+        &.active{
+            color: $black;
+            background-color: #0b379e31;
+            margin: 0 .5rem;
+            border-radius: $border-radius;
+            padding: .5rem 0;
+        }
+    }
+
+    &__heading-secondary{
+        color: $white;
+        font-size: 2rem;
+    }
+
+    &__heading-primary{
+        color: $white;
+        font-size: 4rem;
+        margin: -2rem 0;
+    }
+
+    &__countdown{
+        font-size: 1.5rem;
+        background-color: #0b389e;
+        padding: 0.5rem 4rem;
+        color: #ffffff;
+        border-radius: 0.5rem;
+        margin-top: 2rem;
+    }
