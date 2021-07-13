@@ -11,7 +11,7 @@ function Header() {
     return(
         <header>
                 <div className="logo-box">
-                    <Link href="/">
+                    <Link href="/" >
                     <Image 
                             src="/images/thyflowlogo.png"
                             height="74"
@@ -23,27 +23,27 @@ function Header() {
                 <nav className="nav">
                     <ul className="nav__items">
                         <li className="nav__list">
-                            <Link href="/">
+                            <Link href="/" >
                                 <a className="nav__link">home</a>
                             </Link>
                         </li>
                         <li className="nav__list">
-                            <Link href="/about/about/">
+                            <Link href="/about/about/" >
                                 <a className="nav__link">about</a>
                             </Link>
                         </li>
                         <li className="nav__list">
-                            <Link href="/services/services/">
+                            <Link href="/services/services/" >
                                 <a className="nav__link">services</a>
                             </Link>
                         </li>
                         <li className="nav__list">
-                            <Link href="/contact/contact/">
+                            <Link href="/contact/contact/" >
                                 <a className="nav__link">contact</a>
                             </Link>
                         </li>
                         <li className="nav__list">
-                            <Link href="/blog/blog/">
+                            <Link href="/" >
                                 <a className="nav__link">blog</a>
                             </Link>
                         </li>
@@ -63,29 +63,29 @@ function Header() {
                         </Modal>
                 </div>
                 <Menu className="mobile-menu" right>
-                            <Link href="/" >
+                            <Link href="/"  >
                                 <a className="nav__mobile-link">home</a>
                             </Link> 
-                            <Link href="/about/about/" >
+                            <Link href="/about/about/"  >
                                 <a className="nav__mobile-link">about</a>
                             </Link>
                         
-                            <Link href="/services/services/" >
+                            <Link href="/services/services/"  >
                                 <a className="nav__mobile-link">services</a>
                             </Link>
                         
-                            <Link href="/contact/contact/" tag="a">
+                            <Link href="/contact/contact/" >
                                 <a className="nav__mobile-link">contact</a>
                             </Link>
                        
-                            <Link href="/blog/blog/" tag="a">
+                            <Link href="/" >
                                 <a className="nav__mobile-link">blog</a>
                             </Link>
 
                              <div>
-                            <Link href="/">
+                         
                             <a className="nav__mobile-join">join beta</a>
-                            </Link>
+                          
                         </div>
                 </Menu>
             </header>
