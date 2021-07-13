@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { stack as Menu } from 'react-burger-menu'
-import Modal from "../modal/modal"
+// import Modal from "../modal/modal"
 import React, {useState} from 'react'
 
 
 
 function Header() {
-    const [showModal, setShowModal] = useState(false); 
+    // const [showModal, setShowModal] = useState(false); 
     return(
         <header>
                 <div className="logo-box">
@@ -55,12 +55,12 @@ function Header() {
                         <span className="btn__text">join beta</span> 
                         </button>
                     </Link>
-                    <Modal
+                    {/* <Modal
                             onClose={() => setShowModal(false)}
                             show={showModal}
                             >
                             Hello from the modal!
-                        </Modal>
+                        </Modal> */}
                 </div>
                 <Menu className="mobile-menu" right>
                             <Link href="/"  >
