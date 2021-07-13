@@ -1,4 +1,5 @@
 module.exports = {
   reactStrictMode: false,
-  target: 'serverless'
+  target: 'serverless',
+  
 }
