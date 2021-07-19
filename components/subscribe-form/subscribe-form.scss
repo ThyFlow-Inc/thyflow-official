@@ -52,6 +52,10 @@
     }
 }
 
+.message{
+    color: $orange;
+}
+
 .pad{
     margin-top: .9rem;
     @include respond(tablet){

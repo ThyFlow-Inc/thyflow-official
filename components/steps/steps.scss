@@ -1,9 +1,9 @@
 .steps{
-    padding: 13rem 5rem;
+    padding: 7rem 5rem;
     position: relative;
     margin-bottom: 10rem;
     @include respond(mobile-screen){
-        padding: 13rem 3rem;
+        padding: 5rem 3rem;
     }
     &__heading-secondary{
         color: $orange;
