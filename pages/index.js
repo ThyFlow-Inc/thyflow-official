@@ -6,7 +6,7 @@ import Footer from '../components/footer/footer'
 import Header from '../components/header/header'
 import HomeHero from '../components/home-hero/home-hero'
 import Steps from '../components/steps/steps'
-import styles from '../styles/Home.module.css'
+
 
 
 
@@ -19,11 +19,11 @@ export default function Home() {
         <link rel="icon" href="/images/thyflowlogo.png" />
       </Head>
       <Header />
-      <main className={styles.main}>
+      <main>
         <HomeHero />
-        <Features />
-        <Steps />
         <Countdown />
+        <Steps />
+        <Features />
         <Banner />
       </main>
       <Footer/>

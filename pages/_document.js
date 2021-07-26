@@ -13,8 +13,18 @@ class MyDocument extends Document {
       <Html>
         <Head>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-          
+            <link
+            rel="preload"
+            href="/fonts/avenir/Avenir-Book.otf"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/avenir/Avenir-Black.otf"
+            as="font"
+            crossOrigin=""
+          />
         </Head>
         <body>
           <Main />

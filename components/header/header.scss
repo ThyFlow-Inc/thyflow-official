@@ -16,6 +16,10 @@ header{
     }
 }
 
+.logo{
+  cursor: pointer;
+}
+
 .nav{
    
     @include respond(small-screen){

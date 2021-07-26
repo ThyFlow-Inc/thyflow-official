@@ -8,10 +8,12 @@
         font-size: 2rem;
         margin-bottom: 5rem;
         text-shadow: 4px 6px 21px rgba(172,172,172,0.73);
+        text-transform: capitalize;
     }
     &__text{
         font-weight: 700;
         color: $black;
+        
     }
     &__cards{
         display: flex;
@@ -24,6 +26,7 @@
     &__card{
         height: 17rem;
         width: 12rem;
+        background-color: $white;
         box-shadow: $box-shadow;
         border: none;
         border-radius: $border-radius;
@@ -61,7 +64,7 @@
     }
     &__button{
         position: relative;
-        top: 3rem;
+        top: 6rem;
         left: 1.5rem;
         @include respond(tablet){
             top: 5rem;

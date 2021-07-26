@@ -2,8 +2,10 @@ const Banner =()=>(
     <section className="banner">
         <div className="banner__card">
             <div className="banner__text-content">
-                <h2 className="banner__heading">Join now to reserve your spot in the beta!</h2>
-                <p className="banner__text">We are sending invitations to only 100 users per week. Links are given in order of requests received.</p>
+                <h2 className="banner__heading">Don’t miss out! Join the ThyFlow app BETA test group now.</h2>
+                <p className="banner__text">Beta testing will be limited to 100 users a week as we work to expand our services. Join requests 
+are processed on a first come, first serve basis.</p>
+                <p className="banner__text">Reserve your spot now!</p>
                 <div>
                     <button className="btn btn--primary">
                         <span className="btn__text">join beta</span>

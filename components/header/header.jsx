@@ -14,9 +14,10 @@ function Header() {
                     <Link href="/" >
                     <Image 
                             src="/images/thyflowlogo.png"
-                            height="74"
-                            width="74"
+                            height="65"
+                            width="130"
                             alt="logo"
+                            className="logo"
                     />   
                     </Link>
                 </div>
@@ -84,7 +85,7 @@ function Header() {
 
                              <div>
                          
-                            <a className="nav__mobile-join">join beta</a>
+                            <a className="nav__mobile-join">join our community</a>
                           
                         </div>
                 </Menu>

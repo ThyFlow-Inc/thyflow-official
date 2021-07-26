@@ -15,7 +15,11 @@
         font-size: 2.5rem;
        
     }
-
+    &__text{
+        font-weight: 700;
+        color: $black;
+        font-size: 1rem;
+    }
     &__button{
         font-size: 1.5rem;
         @include respond(small-screen){
@@ -25,12 +29,13 @@
 
     &__heading-primary{
         color: $orange;
-        font-size: 4rem;
+        font-size: 2rem;
         margin-top: -3rem;
     }   
 }
 
 .image{
+    flex: 0 0 40%;
     @include respond(small-screen){
         margin: 5rem;
     }

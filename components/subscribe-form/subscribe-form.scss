@@ -20,7 +20,8 @@
         }
     }
     &__form{
-        width: 60%;
+        width: 65%;
+        background: $white;
         box-shadow: $box-shadow;
         border-radius: 1rem;
         display: flex;
@@ -57,7 +58,7 @@
 }
 
 .pad{
-    margin-top: .9rem;
+    margin-top: .8rem;
     @include respond(tablet){
         margin-right: 1rem;
     }
