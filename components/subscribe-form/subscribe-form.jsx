@@ -46,23 +46,23 @@ const SubscribeForm =()=>{
             <h2 className="subscribe__heading-secondary">
                 Subscribe to our weekly newsletter to get tips sent to your inbox.
             </h2>
-            <form action="" className="subscribe__form" onSubmit={subscribe}>
-            <div className="message">
+            <form action="" className="subscribe__form">
+            {/* <div className="message">
                     {message
                     ? message
                     : ''}
-                </div>
+                </div> */}
                 <input type="text" 
                     className="subscribe__input" 
                     placeholder="Your Name here"
-                    ref={inputName}
+                    // ref={inputName}
                     required
                     type="text"
                 />
                 <input type="text" 
                     className="subscribe__input" 
                     placeholder="Your Email here"
-                    ref={inputEl}
+                    // ref={inputEl}
                     required
                     type="email"
                 />
