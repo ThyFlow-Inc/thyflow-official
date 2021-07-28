@@ -14,8 +14,8 @@ function Header() {
                     <Link href="/" >
                     <Image 
                             src="/images/thyflowlogo.png"
-                            height="65"
-                            width="130"
+                            height="70"
+                            width="160"
                             alt="logo"
                             className="logo"
                     />   
