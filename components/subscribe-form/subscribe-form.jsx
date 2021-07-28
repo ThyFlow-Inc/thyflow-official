@@ -1,6 +1,6 @@
-import React, { useRef, useState } from 'react';
+// import React, { useRef, useState } from 'react';
 
-const SubscribeForm =()=>{
+const SubscribeForm =()=>(
   //    // 1. Create a reference to the input so we can fetch/clear it's value.
   // const inputEl = useRef(null);
   // const inputName = useRef(null);
@@ -37,7 +37,7 @@ const SubscribeForm =()=>{
     
   //   setMessage('Success! 🎉 You are now subscribed to the newsletter.');
   // };
-    return(
+    
     <>
     <div className="subscribe">
         <h1 className="subscribe__form-title">
@@ -52,19 +52,17 @@ const SubscribeForm =()=>{
                     ? message
                     : ''}
                 </div> */}
-                <input type="text" 
+                {/* <input type="text" 
                     className="subscribe__input" 
                     placeholder="Your Name here"
                     // ref={inputName}
-                    required
+                
                     type="text"
-                />
+                /> */}
                 <input type="text" 
                     className="subscribe__input" 
                     placeholder="Your Email here"
-                    // ref={inputEl}
-                    required
-                    type="email"
+                    // type="email"
                 />
                 <div>   
                 <button className="btn btn--primary pad">
@@ -75,6 +73,6 @@ const SubscribeForm =()=>{
             </div>
     </>
 )
-}
+
 
 export default SubscribeForm;
