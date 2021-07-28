@@ -52,7 +52,6 @@ const SubscribeForm =()=>{
                     ? message
                     : ''}
                 </div>
-                
                 <input type="text" 
                     className="subscribe__input" 
                     placeholder="Your Name here"
@@ -67,8 +66,7 @@ const SubscribeForm =()=>{
                     required
                     type="email"
                 />
-                <div>
-               
+                <div>   
                 <button className="btn btn--primary pad">
                    <span className="btn__text">Subscribe</span> 
                 </button>
