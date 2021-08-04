@@ -6,10 +6,11 @@
     color: $white;
     padding: .7rem 2rem;
     border: $border-transparent;
+    z-index: 1;
     cursor: pointer;
 
     &:hover{
-        box-shadow: $box-shadow-hover;
+        box-shadow: $box-shadow-hover;    
     }
 
     &--primary{
@@ -18,7 +19,7 @@
 
     &__text {
         font-size: 1rem;  
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Avenir', sans-serif;
         text-transform: capitalize;
       }
 }

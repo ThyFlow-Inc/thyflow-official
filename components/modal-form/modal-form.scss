@@ -1,0 +1,92 @@
+.modal-form{
+ 
+        box-shadow: $box-shadow;
+        border-radius: $border-radius;
+        padding: 1rem 2rem;
+        width: 43%;
+        border-radius: $border-radius;
+        position: relative;
+        left: 28%;
+        // transform: translateX(-50%);
+        z-index: 5;
+        margin-top: 3rem;
+        background-color: $white;
+        @include respond(small-screen){
+            width: 88%;
+            left: 6%;
+        }
+    
+    &__form-label{
+        display: inline-block;
+        font-size: 1rem;
+        color: $black;
+        padding: 1rem 1rem;
+    }
+    &__form-input{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__input{
+        height: 2rem;
+        width: 60%;
+        border: none;
+        outline: none;
+        background-color: #0b379e21;
+        padding: 0 1rem;
+        color: $grey;
+        font-family: inherit;
+        margin: 0 2rem;
+        border-radius: $border-radius;
+        
+    }
+    &__button{
+        position: relative;
+        left: 51%;
+        margin: 1rem 0;
+        @include respond(small-screen){
+            left: 38%;
+        }
+    }
+}
+
+.mymodal{
+    background: rgb(255 255 255 / 0%);
+    overflow: scroll;
+    border: none;
+    z-index: 4;
+    overflow-x: hidden;
+}
+
+.grey-text{
+    color: rgb(182, 182, 182);
+}
+
+.head-text{
+    color: $black;
+}
+
+.head-title{
+    color:$blue;
+    font-size: 1.2rem;
+    font-family: 'Avenir Bold', sans-serif;
+}
+
+.modalbutton{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $blue;
+    position: relative;
+    left: 50%;
+    top: 2rem;
+    background-color: #0b389e;
+    border: none;
+    color: $white;
+    padding: .7rem 1rem;
+    border-radius: $border-radius;
+}
+
+.ReactModal__Overlay{
+    z-index: 3;
+}

@@ -1,9 +1,9 @@
 .subscribe{
     position: relative;
-    padding: 5rem 0;
+    padding: 7rem 0;
     &__heading-secondary{
         color: $orange;
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-shadow: 4px 6px 21px rgba(172,172,172,0.73);
         text-align: center;
         @include respond(tablet){
@@ -12,7 +12,7 @@
     }
     &__form-title{
         color: $blue;
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-shadow: 4px 6px 21px rgba(172,172,172,0.73);
         text-align: center;
         @include respond(tablet){
@@ -34,11 +34,9 @@
         margin: 5rem 0;
         @include respond(tablet){
             width: 70%;
-
         }
-        @include respond(tablet){
-            width: 100%;
-
+        @include respond(small-screen){
+            width: 98%;
         }
     }
     &__input{
@@ -50,6 +48,17 @@
         width: 13rem;
         border: none;
         outline: none;
+        @include respond(small-screen){
+            width: 9rem;
+        }
+    }
+    &__notification{
+        text-align: center;
+        font-size: 1.2rem;
+        position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
     }
 }
 
@@ -61,5 +70,8 @@
     margin-top: .8rem;
     @include respond(tablet){
         margin-right: 1rem;
+    }
+    @include respond(mobile-screen){
+        margin-top: .5rem;
     }
 }

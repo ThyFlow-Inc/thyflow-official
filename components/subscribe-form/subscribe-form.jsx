@@ -1,76 +1,82 @@
-// import React, { useRef, useState } from 'react';
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 
-const SubscribeForm =()=>(
-  //    // 1. Create a reference to the input so we can fetch/clear it's value.
-  // const inputEl = useRef(null);
-  // const inputName = useRef(null);
-  // // 2. Hold a message in state to handle the response from our API.
-  // const [message, setMessage] = useState('');
+const url = "https://thyflow.us17.list-manage.com/subscribe/post?u=4a9e6b182d2b79f3650fa90db&id=99b153b64d";
 
-  // const subscribe = async (e) => {
-  //   e.preventDefault();
 
-  //   // 3. Send a request to our API with the user's email address.
-  //   const res = await fetch('/api/subscribe', {
-  //     body: JSON.stringify({
-  //       email: inputEl.current.value,
-  //       name: inputName.current.value
-  //     }),
-  //     headers: {
-  //       'Content-Type': 'application/json'
-  //     },
-  //     method: 'POST'
-  //   });
+const CustomForm = ({ status, message, onValidated }) => {
+    let email, firstName;
 
-  //   const { error } = await res.json();
-
-  //   if (error) {
-  //     // 4. If there was an error, update the message in state.
-  //     setMessage(error);
-
-  //     return;
-  //   }
-
-  //   // 5. Clear the input value and show a success message.
-  //   inputEl.current.value = '';
-  //   inputName.current.value = '';
+    const submit = () =>
     
-  //   setMessage('Success! 🎉 You are now subscribed to the newsletter.');
-  // };
-    
-    <>
-    <div className="subscribe">
-        <h1 className="subscribe__form-title">
-                Stay updated with ThyFlow
-            </h1>
-            <h2 className="subscribe__heading-secondary">
-                Subscribe to our weekly newsletter to get tips sent to your inbox.
-            </h2>
-            <form action="" className="subscribe__form">
-            {/* <div className="message">
-                    {message
-                    ? message
-                    : ''}
-                </div> */}
-                {/* <input type="text" 
-                    className="subscribe__input" 
-                    placeholder="Your Name here"
-                    // ref={inputName}
-                
-                    type="text"
-                /> */}
-                <input type="text" 
+      email &&
+      firstName &&
+      email.value.indexOf("@") > -1 &&
+      onValidated({
+        EMAIL: email.value,
+        MERGE1: firstName.value
+      });
+  
+     
+  
+    return (
+        <div  className="subscribe__form">
+        {status === "sending" && <div className="subscribe__notification" style={{ color: "blue" }}>sending...</div>}
+        {status === "error" && (
+          <div
+           className="subscribe__notification"  style={{ color: "red" }}
+            dangerouslySetInnerHTML={{ __html: message }}
+          />
+        )}
+        {status === "success" && (
+          <div
+          className="subscribe__notification"   style={{ color: "green" }}
+            dangerouslySetInnerHTML={{ __html: message }}
+          />
+        )}
+       
+                <input
                     className="subscribe__input" 
                     placeholder="Your Email here"
-                    // type="email"
+                    type="email"
+                    ref={node => (email = node)}
+                />
+                <input
+                    className="subscribe__input" 
+                    placeholder="Your Name here"
+                    type="text"
+                    ref={node => (firstName = node)}
                 />
                 <div>   
-                <button className="btn btn--primary pad">
+                <button className="btn btn--primary pad" onClick={submit}>
                    <span className="btn__text">Subscribe</span> 
                 </button>
                 </div>
-            </form>
-            </div>
+           
+     
+        </div>
+    );
+  };
+
+const SubscribeForm =()=>(
+    <>
+    <div className="subscribe">
+        <h1 className="subscribe__form-title">
+            Stay updated with ThyFlow
+        </h1>
+        <h2 className="subscribe__heading-secondary">
+            Subscribe to our weekly newsletter to get tips sent to your inbox.
+        </h2>
+        <MailchimpSubscribe
+          url={url}
+          render={({ subscribe, status, message }) => (
+            <CustomForm
+              status={status}
+              message={message}
+              onValidated={formData => subscribe(formData)}
+            />
+          )}
+        />   
+    </div>
     </>
 )
 

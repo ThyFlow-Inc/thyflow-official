@@ -11,12 +11,12 @@ const Features =()=> (
         <div className="features__cards">
             <div className="features__card">
                 <img 
-                    src="/images/rectangle 15.png"
+                    src="/images/rectangle 39.png"
                     alt="service image"
                     className="features__card-image"
                 />
                 <div className="features__card-title">
-                    <span className="features__card-text">haircut</span>
+                    <span className="features__card-text">On-Demand Barbers</span>
                     <span className="features__card-rating">4.7
                     <Image 
                         src="/images/star.svg"
@@ -41,12 +41,12 @@ const Features =()=> (
             </div>
             <div className="features__card">
             <img 
-                    src="/images/rectangle 17.png"
+                    src="/images/rectangle 31.png"
                     alt="service image"
                     className="features__card-image"
                 />
                 <div className="features__card-title">
-                    <span className="features__card-text">braiding</span>
+                    <span className="features__card-text">Pet Grooming Services</span>
                     <span className="features__card-rating">4.9
                     <Image 
                         src="/images/star.svg"
@@ -71,13 +71,13 @@ const Features =()=> (
             </div>
             <div className="features__card">
                 <img 
-                    src="/images/rectangle 24.png"
+                    src="/images/rectangle 53.png"
                     alt="service image"
                     className="features__card-image"
                    
                 />
                 <div className="features__card-title">
-                    <span className="features__card-text">car wash</span>
+                    <span className="features__card-text">On-Demand Car Wash</span>
                     <span className="features__card-rating">4.7
                     <Image 
                         src="/images/star.svg"

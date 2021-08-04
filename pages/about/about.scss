@@ -23,7 +23,7 @@
     &__us-title{
         font-size: 1.2rem;
         font-weight: 700;
-        color: $blue;
+        color: $orange;
         margin-bottom: 1.5rem;
         text-shadow: 4px 6px 21px rgba(172,172,172,0.73);
     }
@@ -33,7 +33,11 @@
         margin-bottom: 2rem;
         text-shadow: 4px 6px 21px rgba(172,172,172,0.73);
     }
-    
+
+    &__btn{
+        z-index: 1;
+        position:relative;
+    } 
 }
 
 .align-right{

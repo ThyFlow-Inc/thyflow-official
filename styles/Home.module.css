@@ -1,5 +1,12 @@
 .main {
-  background: transparent;
   padding: 3rem 0;
   overflow: hidden;
+}
+
+
+  
+@media screen and (max-width: 600px) {
+  .main.home{
+    padding: 3rem 3rem;
+  }
 }

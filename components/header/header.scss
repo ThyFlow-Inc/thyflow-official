@@ -35,18 +35,27 @@ header{
     &__list{
         list-style: none;
         margin-left: 2rem;
+        transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:hover{
+          transform: scale(.9);         
+      }
     }
     &__link{
         color: $blue;
         font-size: 1rem;
         font-weight: 400;
         text-transform: capitalize;
+        
     }
     &__mobile-link{
         display: block;
         color: $white;
         text-transform: capitalize;
         margin: 2rem 3rem;
+        transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:hover{
+          transform: scale(.9);         
+      }
     }
     &__mobile-join{
         color: $orange;
@@ -56,6 +65,7 @@ header{
 }
 
 .mobile-menu-button{
+  z-index: 1;
     @include respond(small-screen){
         display: none;
     }

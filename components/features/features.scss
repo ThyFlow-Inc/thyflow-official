@@ -1,7 +1,10 @@
 .features{
     padding: 5rem 10rem;
+    @include respond(small-screen){
+        padding: 4rem 6rem;
+    }
     @include respond(mobile-screen){
-        padding: 8rem 6rem;
+        padding: 4rem 1rem;
     }
     &__heading-secondary{
         color: $orange;
@@ -36,7 +39,7 @@
         }
     }
     &__card-image{
-        height: 16rem;
+        height: 14rem;
         width: 12rem;
         object-fit: cover;
     }
@@ -44,7 +47,7 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        margin-top: -4.5rem;
+        margin-top: -2.5rem;
     }
     &__card-more{
         position: relative;
@@ -64,10 +67,10 @@
     }
     &__button{
         position: relative;
-        top: 6rem;
+        top: 4rem;
         left: 1.5rem;
         @include respond(tablet){
-            top: 5rem;
+            top: 3rem;
         }
     }
     &__card-text{
@@ -75,6 +78,7 @@
         font-weight: 700;
         text-transform: capitalize;
         color: $black;
+        flex: 0 0 62%;
     }
     &__card-rating{
         font-size: 1rem;
@@ -82,7 +86,7 @@
         color: $black;
     }
     &__card-bottom{
-        padding: 1rem 2rem;
+        padding: 1rem 1rem;
         @include respond(tablet){
            padding: 2rem 2rem;
         }

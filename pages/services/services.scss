@@ -5,7 +5,7 @@
     }
     &__hero{
         display: flex;
-        align-items: center;
+        align-items: end;
         justify-content: space-evenly;
         @include respond(small-screen){
             flex-direction: column;
@@ -14,17 +14,17 @@
 
     &__heading-secondary{
         color: $orange;
-        font-size: 3rem;
+        font-size: 2rem;
         @include respond(small-screen){
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
     }
 
     &__heading-primary{
         color: $blue;
-        font-size: 4rem;
+        font-size: 3rem;
         @include respond(small-screen){
-            font-size: 3rem;
+            font-size: 2rem;
         }
     }
 
@@ -32,6 +32,11 @@
         font-weight: 700;
         color: $black;
         font-size: 1rem;
+    }
+
+    &__btn{
+        z-index: 1;
+        position:relative;
     }
    
     &__cards{
@@ -45,8 +50,8 @@
         }
     }
     &__card{
-        width: 20rem;
-        height: 32rem;
+        width: 20.5rem;
+        height: 34rem;
         background-color: $white;
         box-shadow: $box-shadow;
         border: none;
@@ -134,7 +139,8 @@
 }
 
 .xs{
-    font-weight: 400;
+    color: $orange;
+    margin-top: 2rem;
 }
 
 .right{

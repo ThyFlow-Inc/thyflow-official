@@ -45,6 +45,7 @@
         font-family: inherit;
         margin: 0 2rem;
         border-radius: $border-radius;
+        z-index: 1;
         &--message{
             height: 7rem;
         }
@@ -79,6 +80,10 @@
         color: $blue;
         font-weight: 400;
         text-align: center;
+    }
+    &__notification{
+        margin: 1rem;
+        font-size: 1.2rem;
     }
 }
 
