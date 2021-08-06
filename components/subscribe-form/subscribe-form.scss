@@ -36,7 +36,10 @@
             width: 70%;
         }
         @include respond(small-screen){
-            width: 98%;
+            width: 107%;
+        }
+        @include respond(mobile-screen){
+            width: 116%;
         }
     }
     &__input{

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { stack as Menu } from 'react-burger-menu'
 import React, {useState} from 'react'
 import Modal from 'react-modal'
@@ -18,12 +17,11 @@ function Header() {
         <header>
                 <div className="logo-box">
                     <Link href="/" >
-                    <Image 
-                            src="/images/ThyFlow Logo.png"
-                            height="50"
-                            width="160"
-                            alt="logo"
-                            className="logo"
+                    <img
+                        src="/images/ThyFlow Logo.png"
+                       
+                        alt="logo"
+                        className="logo"
                     />   
                     </Link>
                 </div>

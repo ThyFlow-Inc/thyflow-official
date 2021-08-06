@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Modal from 'react-modal'
 import React, {useState} from 'react'
 import ModalForm from '../modal-form/modal-form';
@@ -50,17 +49,15 @@ const HomeHero =()=>{
                         ThyFlow. Life, your way.
                         </p>
                     </div>
-                    <div className="image">
                     <Fade right>
-                        <Image 
+                    <div className="image">        
+                        <img 
                             src="/images/MainContent.png"
-                            width={400}
-                            height={800}
+                            className="home-hero__image"
                             alt="phone image"
                         />
-                    </Fade>
                     </div>
-                    
+                    </Fade>
                 </div>
     </section>
 );

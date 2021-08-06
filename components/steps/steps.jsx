@@ -2,7 +2,7 @@ import Fade from 'react-reveal/Fade';
 
 const Steps =() =>(
     <section className="steps">
-        <h2 className="steps__heading-secondary">How thyflow works</h2>
+        <h2 className="steps__heading-secondary">How thyFlow works</h2>
         <div className="steps__cards">
             <div className="steps__card">
                 <Fade top>

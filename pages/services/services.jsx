@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Footer from '../../components/footer/footer'
 import Header from "../../components/header/header";
 import Head from 'next/head'
@@ -42,12 +41,13 @@ return(
                         </p>
                     </div>
                     <Fade right>
-                    <Image 
+                        <div>
+                    <img 
                         src="/images/maincontent.png"
-                        width={300}
-                        height={600}
+                        className="services__image"
                         alt="phone image"
                     />
+                    </div>
                     </Fade>
                 </div>
                 <div className="services__cards">

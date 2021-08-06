@@ -10,14 +10,22 @@ header{
 
 .logo-box{
     padding: 2rem 1rem;
+    @include respond(tablet){
+      padding: 2rem 5rem; 
+}
     @include respond(small-screen){
-        margin-top: 3.5rem;
-    margin-left: -9rem;
+      margin-top: 3.5rem;
+      margin-left: -15rem;
+      padding: 2rem 2rem;
+    }
+    @include respond(mobile-screen){
+      margin-left: -9rem;
     }
 }
 
 .logo{
   cursor: pointer;
+  height: 3rem;
 }
 
 .nav{

@@ -18,7 +18,7 @@ export default function Home() {
       <Head>
         <title>ThyFlow</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/images/thyflowlogo.png" />
+        <link rel="icon" href="/images/thyflowlogo.png"/>
       </Head>
       <Header />
       <main className="main home" id="main">
@@ -26,7 +26,6 @@ export default function Home() {
         <Countdown />
         <Steps />
         <Features />
-        <SubscribeForm />
         <Banner />
       </main>
       <Footer/>

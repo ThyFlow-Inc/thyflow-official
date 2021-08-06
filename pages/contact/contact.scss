@@ -22,6 +22,18 @@
         border-radius: $border-radius;
         padding: 2rem 0;
         flex: 0 0 65%;
+        @include respond(big-tab){
+            width: 124%;
+            
+        }
+        @include respond(tablet){
+            width: 229%;
+        }
+        @include respond(small-screen){
+            width: 118%;
+            position: relative;
+            left: -2rem;
+        }
     }
     &__form-label{
         display: inline-block;
@@ -58,22 +70,20 @@
             left: 79%;
         }
         @include respond(big-tab){
-            left: 75%;
-        }
-        @include respond(medium){
-            left: 73%;
-        }
-        @include respond(tablet){
             left: 67%;
         }
-        @include respond(small-screen){
-            left: 64%
-        }
+       
+       
     }
     &__text-content{
         padding: 0 5rem;
+        @include respond(tablet){
+                padding: 0 4rem;
+                margin-left: 14rem;
+        }
         @include respond(small-screen){
             padding: 3rem 5rem;
+            margin-left: 0;
         }
     }
     &__text{

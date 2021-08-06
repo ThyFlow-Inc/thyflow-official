@@ -1,11 +1,17 @@
 .home-hero{
-    padding: 5rem 10rem 0 10rem;
+    padding: 5rem 7rem 0 10rem;
+    @include respond( big-tab){
+        padding: 5rem 7rem 0 18rem;
+    }
+    @include respond(medium){
+        padding: 5rem 4rem 0 18rem;
+    }
     @include respond(small-screen){
         padding: 3rem 2rem 0 2rem;
     }
     &__header{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         @include respond(small-screen){
             flex-direction: column;
         }
@@ -21,6 +27,12 @@
         font-size: 1rem;
         margin-bottom: 2rem;
     }
+    &__text-content{
+        flex: 0 0 50%;
+        @include respond(big-tab){
+            flex: 0 0 65%;
+        }
+    }
     &__heading-primary{
         color: $orange;
         font-size: 2rem;
@@ -30,11 +42,21 @@
         position: relative;
         z-index: 1;
     }   
+
+    &__image{
+        height: 80%;
+        @include respond( big-tab){
+            height: 66%;
+        }
+        @include respond(small-screen){
+            height: 48rem;;
+          }
+    }
 }
 
 .image{
-    flex: 0 0 35%;
+  
     @include respond(small-screen){
-        margin: 5rem;
+        margin: 4rem 12rem;
     }
 }
