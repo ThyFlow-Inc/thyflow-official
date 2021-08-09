@@ -53,7 +53,7 @@ return(
                 <div className="services__cards">
                         <div className="services__card">
                             <img 
-                                src="/images/rectangle 31.png"
+                                src="/images/Rectangle 3.png"
                                 alt="service image"
                                 className="services__card-image"
                             />
@@ -65,7 +65,7 @@ return(
                         
                         <div className="services__card">
                             <img 
-                                src="/images/rectangle 39.png"
+                                src="/images/Rectangle 9.png"
                                 alt="service image"
                                 className="services__card-image"
                             />
@@ -76,7 +76,7 @@ return(
                         </div>
                         <div className="services__card">
                             <img 
-                                src="/images/rectangle 52.png"
+                                src="/images/Rectangle 2.png"
                                 alt="service image"
                                 className="services__card-image"
                             
@@ -88,7 +88,7 @@ return(
                         </div>
                     <div className="services__card">
                     <img 
-                            src="/images/rectangle 53.png"
+                            src="/images/Rectangle 5.png"
                             alt="service image"
                             className="services__card-image"
                         />
@@ -99,7 +99,7 @@ return(
                     </div>
                     <div className="services__card">
                         <img 
-                            src="/images/rectangle 48.png"
+                            src="/images/Rectangle 48.png"
                             alt="service image"
                             className="services__card-image"
                         
@@ -111,7 +111,7 @@ return(
                     </div>
                     <div className="services__card">
                         <img 
-                            src="/images/group 2.png"
+                            src="/images/Group.png"
                             alt="service image"
                             className="services__card-more-image"
                         />

@@ -10,7 +10,7 @@ const Features =()=> (
             <Link href="/services/services/">            
                 <div className="features__card">
                     <img 
-                        src="/images/rectangle 39.png"
+                        src="/images/Rectangle 3.png"
                         alt="service image"
                         className="features__card-image"
                     />
@@ -22,7 +22,7 @@ const Features =()=> (
             <Link href="/services/services/">   
                 <div className="features__card">
                 <img 
-                        src="/images/rectangle 31.png"
+                        src="/images/Rectangle 3.png"
                         alt="service image"
                         className="features__card-image"
                     />
@@ -35,7 +35,7 @@ const Features =()=> (
             <Link href="/services/services/">   
                 <div className="features__card">
                     <img 
-                        src="/images/rectangle 53.png"
+                        src="/images/Rectangle 5.png"
                         alt="service image"
                         className="features__card-image"
                     
@@ -48,7 +48,7 @@ const Features =()=> (
             <Link href="/services/services/">   
                 <div className="features__card">
                     <img 
-                        src="/images/group 2.png"
+                        src="/images/Group.png"
                         alt="service image"
                         className="features__card-more-image"
                     />
