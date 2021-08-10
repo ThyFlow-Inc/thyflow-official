@@ -47,11 +47,11 @@ function Header() {
                                 <a className="nav__link">contact</a>
                             </Link>
                         </li>
-                        <li className="nav__list">
+                        {/* <li className="nav__list">
                             <Link href="/">
                                 <a className="nav__link">thyBlog</a>
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </nav>
                 <button className="btn btn--primary home-hero__button mobile-menu-button" onClick={toggleModal}>
@@ -81,9 +81,9 @@ function Header() {
                                 <a className="nav__mobile-link">contact</a>
                             </Link>
                        
-                            <Link href="/" >
+                            {/* <Link href="/" >
                                 <a className="nav__mobile-link">thyBlog</a>
-                            </Link>
+                            </Link> */}
 
                              <div>
                          

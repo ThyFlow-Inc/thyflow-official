@@ -5,7 +5,7 @@
     }
     &__hero{
         display: flex;
-        align-items: end;
+        align-items: normal;
         justify-content: space-evenly;
         @include respond(small-screen){
             flex-direction: column;

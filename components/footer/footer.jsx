@@ -6,7 +6,7 @@ const Footer =()=>(
                 <li className="footer__list">home</li>
                 <li className="footer__list">about</li>
                 <li className="footer__list">services</li>
-                <li className="footer__list">blog</li>
+                {/* <li className="footer__list">blog</li> */}
                 <li className="footer__list">contact</li>
             </ul>
         </div>

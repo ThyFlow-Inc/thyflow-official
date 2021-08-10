@@ -22,9 +22,9 @@
         border-radius: $border-radius;
         padding: 2rem 0;
         flex: 0 0 65%;
+        width: 136%;
         @include respond(big-tab){
-            width: 124%;
-            
+            width: 124%;    
         }
         @include respond(tablet){
             width: 229%;
@@ -64,15 +64,8 @@
     }
     &__button{
         position: relative;
-        left: 77%;
+        left: 67%;
         margin: 1rem 0;
-        @include respond(big-screen){
-            left: 79%;
-        }
-        @include respond(big-tab){
-            left: 67%;
-        }
-       
        
     }
     &__text-content{
