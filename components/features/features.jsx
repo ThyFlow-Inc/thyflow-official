@@ -21,7 +21,7 @@ const Features =()=> (
             </Link>
             <Link href="/services/services/">   
                 <div className="features__card">
-                <img 
+                    <img 
                         src="/images/Rectangle 3.png"
                         alt="service image"
                         className="features__card-image"
