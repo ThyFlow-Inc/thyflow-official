@@ -10,7 +10,7 @@ const Features =()=> (
             <Link href="/services/services/">            
                 <div className="features__card">
                     <img 
-                        src="/images/Rectangle 3.png"
+                        src="/images/Rectangle 9.png"
                         alt="service image"
                         className="features__card-image"
                     />
