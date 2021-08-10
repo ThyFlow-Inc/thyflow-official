@@ -43,7 +43,7 @@ return(
                     <Fade right>
                         <div>
                     <img 
-                        src="/images/maincontent.png"
+                        src="/images/MainContent.png"
                         className="services__image"
                         alt="phone image"
                     />
