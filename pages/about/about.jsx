@@ -8,7 +8,6 @@ import React, {useState} from 'react'
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 
-Modal.setAppElement('#main')
 
 const About =()=>{
     
@@ -17,8 +16,6 @@ const About =()=>{
     const toggleModal =()=>{
         setIsOpen(!isOpen)
     }
-
-
     return(
     <>
          <Head>
@@ -45,13 +42,10 @@ const About =()=>{
             </h2>
             </Fade>
             <Fade right>
-            <h2 className="about__heading-secondary align-right">
-              
+            <h2 className="about__heading-secondary align-right">      
                 vetted profesional service providers
             </h2>
             </Fade>
-
-
             <div className="about__us">
                 <h4 className="about__us-title">Our team</h4>
                 <p className="about__us-text">
@@ -109,13 +103,13 @@ const About =()=>{
                 <h4 className="about__us-title">Connect with us today and join the ThyFlow community. </h4>
                     <Flip left>
                     <button className="btn btn--primary about__btn">
-                        <span className="btn__text">Join Beta</span>
+                        <span className="btn__text" onClick={toggleModal}>Join Beta</span>
                     </button>
                     </Flip>
                     <Modal
                                 isOpen={isOpen}
                                 onRequestClose={toggleModal}
-                                contentLabel="My dialog"
+                                className="mymodal"
                             >
                                  <button className="modalbutton" onClick={toggleModal}>Close</button>
                                 <ModalForm />

@@ -12,14 +12,12 @@ function Header() {
         setIsOpen(!isOpen)
     }
 
-
     return(
         <header>
                 <div className="logo-box">
                     <Link href="/" >
                     <img
                         src="/images/ThyFlow Logo.png"
-                       
                         alt="logo"
                         className="logo"
                     />   
@@ -76,19 +74,15 @@ function Header() {
                             <Link href="/services/services/"  >
                                 <a className="nav__mobile-link">services</a>
                             </Link>
-                        
+
                             <Link href="/contact/contact/" >
                                 <a className="nav__mobile-link">contact</a>
                             </Link>
-                       
                             {/* <Link href="/" >
                                 <a className="nav__mobile-link">thyBlog</a>
                             </Link> */}
-
                              <div>
-                         
-                            <a className="nav__mobile-join" onClick={toggleModal}>join beta</a>
-                          
+                            <a className="nav__mobile-join" onClick={toggleModal}>join beta</a>                     
                         </div>
                 </Menu>
             </header>

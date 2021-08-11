@@ -6,7 +6,6 @@ import Footer from '../components/footer/footer'
 import Header from '../components/header/header'
 import HomeHero from '../components/home-hero/home-hero'
 import Steps from '../components/steps/steps'
-import SubscribeForm from '../components/subscribe-form/subscribe-form'
 import Modal from 'react-modal'
 
 Modal.setAppElement('#main')

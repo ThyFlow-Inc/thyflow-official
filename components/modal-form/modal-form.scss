@@ -1,5 +1,4 @@
 .modal-form{
- 
         box-shadow: $box-shadow;
         border-radius: $border-radius;
         padding: 1rem 2rem;
@@ -85,6 +84,8 @@
     color: $white;
     padding: .7rem 1rem;
     border-radius: $border-radius;
+    cursor: pointer;
+    font-family: Avenir, 'sans-serif';
 }
 
 .ReactModal__Overlay{

@@ -8,9 +8,6 @@ import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
 
 
-
-Modal.setAppElement('#main')
-
 const Services =()=>{
     const [isOpen, setIsOpen] = useState(false);
 
@@ -136,16 +133,16 @@ return(
                  Join our BETA test group and be one of the first to access our exclusive on-demand services.
                 </p>
                     <Flip>
-                    <button className="btn btn--primary services__btn">
-                        <span className="btn__text">Join Beta</span>
+                    <button className="btn btn--primary services__btn" onClick={toggleModal}>
+                        <span className="btn__text" >Join Beta</span>
                     </button>
                     </Flip>
                     <Modal
                                 isOpen={isOpen}
                                 onRequestClose={toggleModal}
-                                contentLabel="My dialog"
+                                className="mymodal"
                             >
-                                 <button className="modalbutton" onClick={toggleModal}>modal</button>
+                                 <button className="modalbutton" onClick={toggleModal}>Close</button>
                                 <ModalForm />
                             </Modal>
                            

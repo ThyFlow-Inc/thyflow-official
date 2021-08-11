@@ -1,12 +1,24 @@
-import CountdownTimer from "react-component-countdown-timer";
-import "react-component-countdown-timer/lib/styles.css";
 import Fade from 'react-reveal/Fade';
+import FlipCountdown from '@rumess/react-flip-countdown';
 
 const Countdown =()=>(
     <section className="countdown">
         <h3 className="countdown__title">Countdown to the Beta launch!</h3>
         <Fade>
-            <CountdownTimer count={5232232} border showTitle responsive size={28} color="#fff" backgroundColor="#0b389e"/>
+        <FlipCountdown
+                dayTitle='Days'
+                hourTitle='Hours'
+                minuteTitle='Minutes'
+                secondTitle='Seconds'
+                hideYear
+                hideMonth
+                // hideDay
+                // hideHour
+                // hideMinute
+                // hideSecond
+                size='large'
+                endAt={'2021-09-10 12:00:58'} // Date/Time
+            />
         </Fade>
     </section>
 );
