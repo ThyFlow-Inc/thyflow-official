@@ -6,8 +6,17 @@ body {
   line-height: normal;
   font-family: 'Avenir', sans-serif;
   overflow-x: hidden;
+  overflow-y: scroll;
   height: 100vh;
 }
+
+body{
+  background: linear-gradient(to left bottom, #ffcb0d2d, #ffb25a28, #ffa29828, #ffa7cd4f, #ffb5ef41, #edacf431, #d5a5fa34, #b99fff3d, #a280ff48, #8860ff3b, #6a3dff36, #4400ff23);
+  background-attachment: fixed;
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 
 @media screen and (max-width: 1024px) {
@@ -24,18 +33,18 @@ body {
   }
 }
 
-body::before{
+/* body::before{
   content: '';
   background: url('../public/images/Background.png');
   background-size: auto;
   background-repeat: no-repeat;
-  opacity: 0.15;
+  opacity: 0.17;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-}
+} */
 
 a {
   color: inherit;

@@ -1,5 +1,8 @@
 .contact{
     padding: 5rem 10rem;
+    @include respond(tablet){
+        padding: 5rem 5rem;
+    }
     @include respond(small-screen){
         padding: 5rem 2rem;
     }
@@ -21,18 +24,18 @@
         box-shadow: $box-shadow;
         border-radius: $border-radius;
         padding: 2rem 0;
-        flex: 0 0 65%;
-        width: 136%;
+        z-index: 1;
+        background-color: $white;
+        width: 145%;
         @include respond(big-tab){
-            width: 124%;    
-        }
-        @include respond(tablet){
-            width: 229%;
-        }
-        @include respond(small-screen){
-            width: 118%;
+            width: 124%;
             position: relative;
-            left: -2rem;
+            left: -2rem;    
+        }
+
+        @include respond(mobile-screen){
+            width: 110%;
+            left: -1.2rem;
         }
     }
     &__form-label{
@@ -61,6 +64,9 @@
         &--message{
             height: 7rem;
         }
+        @include respond(small-screen){
+            margin: 0 1rem;
+        }
     }
     &__button{
         position: relative;
@@ -69,15 +75,7 @@
        
     }
     &__text-content{
-        padding: 0 5rem;
-        @include respond(tablet){
-                padding: 0 4rem;
-                margin-left: 14rem;
-        }
-        @include respond(small-screen){
-            padding: 3rem 5rem;
-            margin-left: 0;
-        }
+        flex: 0 0 35%;
     }
     &__text{
         color: $blue;

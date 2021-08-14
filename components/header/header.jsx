@@ -45,11 +45,11 @@ function Header() {
                                 <a className="nav__link">contact</a>
                             </Link>
                         </li>
-                        {/* <li className="nav__list">
-                            <Link href="/">
+                        <li className="nav__list">
+                            <Link href="/blog/blog/">
                                 <a className="nav__link">thyBlog</a>
                             </Link>
-                        </li> */}
+                        </li>
                     </ul>
                 </nav>
                 <button className="btn btn--primary home-hero__button mobile-menu-button" onClick={toggleModal}>
@@ -78,9 +78,9 @@ function Header() {
                             <Link href="/contact/contact/" >
                                 <a className="nav__mobile-link">contact</a>
                             </Link>
-                            {/* <Link href="/" >
+                            <Link href="/blog/blog/" >
                                 <a className="nav__mobile-link">thyBlog</a>
-                            </Link> */}
+                            </Link>
                              <div>
                             <a className="nav__mobile-join" onClick={toggleModal}>join beta</a>                     
                         </div>

@@ -10,7 +10,6 @@ import Modal from 'react-modal'
 
 Modal.setAppElement('#main')
 
-
 export default function Home() {
   return (
     <>

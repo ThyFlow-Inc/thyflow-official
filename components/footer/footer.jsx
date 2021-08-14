@@ -1,13 +1,25 @@
+import Link from "next/link"
+
 const Footer =()=>(
     <footer className="footer">
         <div className="footer__sitemap">
             <p className="footer__title-text">site map</p>
             <ul className="footer__item">
-                <li className="footer__list">home</li>
-                <li className="footer__list">about</li>
-                <li className="footer__list">services</li>
-                {/* <li className="footer__list">blog</li> */}
-                <li className="footer__list">contact</li>
+                <Link href="/">
+                    <li className="footer__list">home</li>
+                </Link>
+                <Link href="/about/about/">
+                    <li className="footer__list">about</li>
+                </Link>
+                <Link href="/services/services/">
+                    <li className="footer__list">services</li>
+                </Link>
+                <Link href="/blog/blog/">
+                    <li className="footer__list">thyBlog</li>
+                </Link>
+                <Link href="/contact/contact/">
+                    <li className="footer__list">contact</li>
+                </Link>
             </ul>
         </div>
         <div className="footer__connect">

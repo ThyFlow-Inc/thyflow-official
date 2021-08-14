@@ -1,7 +1,7 @@
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 import Fade from 'react-reveal/Fade';
 
-const url = "https://thyflow.us17.list-manage.com/subscribe/post?u=4a9e6b182d2b79f3650fa90db&id=2ed44a36ba";
+const url = "thyflow.us17.list-manage.com/subscribe/post?u=4a9e6b182d2b79f3650fa90db&id=597aa5123a";
 
 const CustomForm = ({ status, message, onValidated })=>{
     let email, firstName, lastName, city;

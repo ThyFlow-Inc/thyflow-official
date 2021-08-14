@@ -11,8 +11,8 @@
         margin-top: 3rem;
         background-color: $white;
         @include respond(small-screen){
-            width: 88%;
-            left: 6%;
+            width: 86%;
+            left: 7%;
         }
     
     &__form-label{
@@ -37,7 +37,9 @@
         font-family: inherit;
         margin: 0 2rem;
         border-radius: $border-radius;
-        
+        @include respond(small-screen){
+            margin: 0 1rem;
+        }
     }
     &__button{
         position: relative;

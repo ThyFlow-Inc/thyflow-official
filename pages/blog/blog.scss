@@ -1,0 +1,88 @@
+.blog{
+    padding: 5rem 5rem;
+    @include respond(small-screen){
+        padding: 5rem 3rem;
+    }
+
+    &__heading{
+        font-size: 2rem;
+        font-weight: 700;
+        color: $blue;
+        text-transform: capitalize;
+        padding: 1rem 2rem;
+    }
+
+    &__card{
+        height: 16rem;
+        width: 70rem;
+        background: $white;
+        display: flex;
+        align-items: center;
+        box-shadow: $box-shadow;
+        border-radius: $border-radius;
+        margin-bottom: 3rem;
+        position: relative;
+        z-index: 1;
+        padding-right: .5rem;
+        @include respond(small-screen){
+            height: 38rem;
+            width: 34rem;
+            padding: 1rem 1rem;
+            flex-direction: column;
+            left: 0;
+            transform: translateX(6%);
+            position: relative;
+        }
+        @include respond(mobile-screen){
+            width: 28rem;
+            transform: translateX(0%);
+        }
+
+        @media screen and (max-width: 380px) {
+            width: 25rem;
+            transform: translateX(0%);
+        }
+        @media screen and (max-width: 360px) {
+            width: 22rem;
+            transform: translateX(3.5%);
+        }
+        @media screen and (max-width: 330px) {
+            width: 22rem;
+            transform: translateX(-3%);
+        }
+    }
+ 
+   
+    &__image{
+        height: 15rem;
+        width: 18rem;
+        object-fit: cover;
+        margin: 0rem .5rem;
+        border-radius: $border-radius;
+        @include respond(small-screen){
+            object-fit: none;
+            height: 19rem;
+            width: 65%;
+        }
+    }
+    &__title{
+        color: $orange;
+        font-size: 1.5rem;
+        margin-top: -1rem;
+        display: block;
+        @include respond(small-screen){
+            margin-top: 0;
+        }
+    }
+
+    &__summary{
+        font-size: 1rem;
+        color: $black;
+        display: block;
+    }
+    &__button{
+        margin-top: .5rem;
+    }
+}
+
+
